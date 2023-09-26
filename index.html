@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+ <!-- Fontawesome CDN Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+  <body>
+<!---HEADER-->
+<section class="header" >
+<nav>
+  <a href="index.html"><img src="images/nmaps.jpg"></a>
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="catalog.html">CATALOG</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+  </div>
+  <i class="fa fa-bars" onclick="showMenu()" ></i>
+</nav>
+<div class="text-box">
+  <h1>N.Maps Designs (PTY) LTD</h1>
+  <p>Empowering Women Through Unique and Affordable Fashion. </p>
+  <a href="catalog.html" class="hero-btn">Click Here</a>
+</div>
+</section>
+
+
+
+  
+
+    <!------ABOUT US CONTENT---->
+ 
+
+    <section class="about">
+      <h1>THE WAY WE WORK</h1>
+  
+  
+      <div class="about-grid">
+        <div class="a-left">
+        <img class="a-image" src="images/IMG-5003.jpg">
+         </div>
+         <div class="a-left">
+          <img class="a-image" src="images/IMG-5004.jpg">
+           </div>
+           <div class="a-left">
+            <img class="a-image" src="images/IMG-4996.JPG">
+             </div>
+             <div class="a-left">
+              <img class="a-image" src="images/IMG-5007.jpg">
+               </div>
+        <div class="a-right">
+          <p class="atext">
+            N.Maps Designs is a fashion designing and sewing company established in April 2021, with a core mission to empower women of all shapes and sizes through unique and affordable fashion. Our goal is to provide stylish and inclusive clothing options that cater to students, entry-level employees, and those seeking fashionable yet affordable garments. With a focus on creativity, sustainability, and customer satisfaction, N.Maps Designs aims to become a leading brand in the fashion industry.</p>
+          </p>
+            <p class="atext"> N.Maps Designs is committed to empowering women by offering trendy and diverse fashion choices, catering to various budgets, while promoting body positivity and sustainability.</p>
+            <p class="atext">Our goal is to be recognized as a globally admired fashion brand, inspiring women to embrace their individuality and feel confident in their style choices.</p>
+            
+            <a href="catalog.html" class="bton">View Our Catalog</a>
+          </div>
+       
+  
+  
+  
+      </div>
+  </section>
+  
+<!---FOOTER-->
+<footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+     
+        <span class="logo_name">N.Maps Designs (PTY) LTD</span>
+      </div>
+    
+    </div>
+    <div class="link-boxes">
+     
+      <ul class="box">
+        <li class="link_name">Site</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="catalog.html">Our Work</a></li>
+      </ul>
+    
+  
+      <div class="info-col">
+      <i class="fa fa-home" ></i>
+                <div>
+                  <span>
+                <h5>8422 Dlaba Road, Umgababa Area 38</h5>
+                    <p>Umgababa,Durban</p>
+                </span>
+              </div>
+                <div>
+                <i class="fa fa-phone" ></i>
+                <span>
+                <h5>0679826129</h5>
+                    <p>Monday to Saturday, 9AM To 4PM</p>
+                </span>
+              </div>
+                <div>
+                <i class="fa fa-envelope" ></i>
+                <span>
+                <h5>nokubongamaphumulo24@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+                </div>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 <a href="#">N.MapsDesigns.</a>All rights reserved</span>
+     
+    </div>
+  </div>
+</footer>
+
+
+
+<!----JAVASCRIPT FOR TOGGLE MENU-->
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+      navLinks.style.right ="0";
+  }
+   function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("a-left");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+  </body>
+</html> 
