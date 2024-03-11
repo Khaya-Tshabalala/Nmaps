@@ -264,7 +264,23 @@
 </div>
 </div>
 </div>
-
+<div class="project-grid">
+  <div class="project-con">
+  <div class="project-image13">
+   <img class="p-image" src="images/PHOTO-2024-03-10-18-41-50.jpg">
+  </div>
+  <div class="project-image13">
+    <img class="p-image" src="images/PHOTO-2024-03-10-18-41-50 (2).jpg">
+   </div>
+   
+   <a class="prev" onclick="plusSlides(-1, 12)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1, 12)">&#10095;</a>
+  <div class="p-info">
+  <h4>Traditional Dress</h4>
+  <p></p>
+</div>
+</div>
+</div>
 <a href="contact.html" class="btn">Work With Us</a>
 <div class="designer">
   <h1>Meet N.Maps</h1>
@@ -273,7 +289,9 @@
 </div>
 </section>
 
-
+<!--------TO TOP BUTTON-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+  
 
   
 <!---FOOTER-->
@@ -376,5 +394,26 @@ function showSlides(n, no) {
 }
 
   </script>
+        <script>
+      // Get the button:
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+    </script>
   </body>
 </html> 
