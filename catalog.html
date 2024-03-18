@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TRV1PEB3X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2TRV1PEB3X');
-</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
@@ -157,6 +148,7 @@
 </div>
 </div>
 </div>
+
 <div class="project-grid">
   <div class="project-con">
   <div class="project-image7">
@@ -193,7 +185,7 @@
 </div>
 </div>
 
-  <div class="project-grid">
+<div class="project-grid">
   <div class="project-con">
   <div class="project-image14">
    <img class="p-image" src="images/girldress.jpeg">
@@ -210,7 +202,7 @@
 </div>
 </div>
 </div>
-  
+
 <div class="project-grid">
   <div class="project-con">
   <div class="project-image9">
@@ -282,6 +274,7 @@
 </div>
 </div>
 </div>
+
 <div class="project-grid">
   <div class="project-con">
   <div class="project-image13">
@@ -299,7 +292,27 @@
 </div>
 </div>
 </div>
+
+<div class="project-grid">
+  <div class="project-con">
+  <div class="project-image15">
+   <img class="p-image" src="images/nmaps1.jpeg">
+  </div>
+  <div class="project-image15">
+    <img class="p-image" src="images/nmaps2.jpeg">
+   </div>
+   
+   <a class="prev" onclick="plusSlides(-1, 14)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1, 14)">&#10095;</a>
+  <div class="p-info">
+  <h4>Traditional Dress</h4>
+  <p></p>
+</div>
+</div>
+</div>
+
 <a href="contact.html" class="btn">Work With Us</a>
+
 <div class="designer">
   <h1>Meet N.Maps</h1>
     <img class="designer-img" src="images/IMG_0936_jpg.jpeg">
@@ -309,8 +322,6 @@
 
 <!--------TO TOP BUTTON-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
-  
-
   
 <!---FOOTER-->
 <footer>
@@ -380,7 +391,7 @@
 
 let slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["project-image1", "project-image2", "project-image3","project-image4","project-image5","project-image6","project-image7","project-image8","project-image9","project-image10","project-image11","project-image12","project-image13","project-image14"]
+let slideId = ["project-image1", "project-image2", "project-image3","project-image4","project-image5","project-image6","project-image7","project-image8","project-image9","project-image10","project-image11","project-image12","project-image13","project-image14","project-image15"]
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(-1, 2);
@@ -395,6 +406,8 @@ showSlides(-1, 10);
 showSlides(-1, 11);
 showSlides(-1, 12);
 showSlides(-1, 13);
+showSlides(-1, 14);
+
 
 
 function plusSlides(n, no) {
@@ -413,7 +426,7 @@ function showSlides(n, no) {
 }
 
   </script>
-        <script>
+    <script>
       // Get the button:
   let mybutton = document.getElementById("myBtn");
   
