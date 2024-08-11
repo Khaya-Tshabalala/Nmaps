@@ -767,6 +767,18 @@ footer .bottom-details .bottom_text{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.project-image24{
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.project-image25{
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .p-image{
   object-fit: contain;
   width: 400px;
